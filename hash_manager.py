@@ -22,7 +22,8 @@ def compare_file_hashes(source_file: str, replica_file: str) -> bool:
         bool: True if the files have the same hash, False otherwise.
 
     Raises:
-        FileNotFoundError: If either `source_file` or `replica_file` does not exist.
+        FileNotFoundError: If either `source_file` or `replica_file` does not
+        exist.
     """
     try:
         with open(source_file, 'rb') as src, open(replica_file, 'rb') as rep:
